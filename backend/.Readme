@@ -1,0 +1,2 @@
+npm i -S express body-parser bcryptjs jsonwebtoken mongoose 
+npm i -D nodemon 
