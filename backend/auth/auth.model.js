@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+
 const userSchema = new Schema({
     name: {
         type: String,
@@ -23,3 +26,7 @@ const userSchema = new Schema({
         timestamps: true
     }
 );
+
+module.exports = userSchema;
+
+
