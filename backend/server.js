@@ -1,7 +1,11 @@
 'use strict'
+const authRoutes = require('./auth/auth.routes');
 const express = require('express');
-const app = express();
+const properties = require('./config/properties');
 
-app.listen(3000, () => {
-    console.log('Server run on page: http://localhost:3000');
+const app = express();
+const router = express.Router();
+
+app.listen(properties.PORT, () => {
+    console.log(`Server run on page: ${properties.PORT}`);
 });
